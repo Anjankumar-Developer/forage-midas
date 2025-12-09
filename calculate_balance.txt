@@ -1,0 +1,37 @@
+Waldorf (ID 5) Balance Calculation
+
+Starting balance: 444.55
+
+All transactions:
+1. 6→9, 173.71 (grommit to antonio, grommit: 2215.37 OK)
+2. 4→8, 124.70 (mario to howsit, mario: 12.34 FAIL - insufficient)
+3. 6→8, 67.38 (grommit to howsit, grommit: 2215.37-173.71=2041.66 OK)
+4. 1→9, 4.38 (bernie to antonio, bernie: 1200.23 OK)
+5. 8→7, 38.74 (howsit to whatsit, howsit: 68.70 OK)
+6. 7→2, 93.14 (whatsit to grommit, whatsit: 777.60 OK)
+7. 9→5, 45.42 (antonio to waldorf, antonio: 2121.54+4.38=2125.92 OK) ✓
+8. 6→5, 32.12 (grommit to waldorf, grommit: 2041.66-67.38=1974.28 OK) ✓
+9. 7→10, 98.3 (whatsit to wilbur, whatsit: 777.60-93.14=684.46 OK)
+10. 7→3, 42.58 (whatsit to maria, whatsit: 684.46-98.3=586.16 OK)
+11. 2→1, 178.24 (grommit to bernie, grommit: 1974.28+93.14=2067.42 OK)
+12. 5→9, 78.74 (waldorf to antonio, waldorf: 489.97 OK) ✓ DEDUCT
+13. 4→8, 139.7 (mario to howsit, mario: 12.34 FAIL - insufficient)
+14. 9→6, 57.84 (antonio to grommit, antonio: 2125.92-45.42-78.74=2001.76 OK)
+15. 10→9, 127.40 (wilbur to antonio, wilbur: 3476.21 OK)
+16. 6→1, 24.37 (grommit to bernie, grommit has remaining OK)
+17. 10→2, 23.86 (wilbur to grommit, wilbur has remaining OK)
+18. 4→6, 72.6 (mario to grommit, mario: 12.34 FAIL - insufficient)
+19. 3→2, 127.63 (maria to grommit, maria: 2774.14 OK)
+20. 3→6, 133.7 (maria to grommit, maria has remaining OK)
+21. 9→5, 184.51 (antonio to waldorf, antonio has remaining OK) ✓
+22. 4→5, 133.86 (mario to waldorf, mario: 12.34 FAIL - insufficient)
+
+Waldorf's transactions:
+- Start: 444.55
+- Receive from 9: +45.42 = 489.97
+- Receive from 6: +32.12 = 522.09
+- Send to 9: -78.74 = 443.35
+- Receive from 9: +184.51 = 627.86
+- (Does not receive from 4 - transaction fails)
+
+Final: 627.86 → rounded down = 627
